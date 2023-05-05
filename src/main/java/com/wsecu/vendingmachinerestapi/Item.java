@@ -8,6 +8,9 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 @JsonInclude
+/**
+ * Class representing an inventory item or a sale item
+ */
 public class Item {
     private String name;
     private int quantity;

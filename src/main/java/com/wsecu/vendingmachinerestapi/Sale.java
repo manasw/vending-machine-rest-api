@@ -5,23 +5,23 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
+import java.util.List;
 
 @Getter
 @Setter
 @JsonInclude
+/**
+ * Class representing a sale transaction
+ */
 public class Sale {
 
     @JsonProperty("id")
     private int id;
-    @JsonProperty("soda")
-    private int soda;
 
-    @JsonProperty("candy")
-    private int candy;
-
-    @JsonProperty("chips")
-    private int chips;
+    @JsonProperty("items")
+    private List<Item> items;
 
     @JsonProperty("amount")
     private BigDecimal amount;
+
 }
